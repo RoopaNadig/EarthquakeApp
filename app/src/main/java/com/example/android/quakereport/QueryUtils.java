@@ -66,6 +66,7 @@ public final class QueryUtils {
                 String time = jsonObject.optString(jsonObject.optString("time"));
 
                 Earthquake newObj = new Earthquake(mag,place,time);
+                earthquakes.add(newObj);
             }
             //output.setText(data);
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
